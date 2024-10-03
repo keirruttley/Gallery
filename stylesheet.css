@@ -8,26 +8,41 @@
     background-color: rgb(255, 90, 90);
 }
 
-#title {
-    /* width fulscreen */
-    width: 100vw;
-    /* centre content vertically and horizontally */
+ /* centre content vertically and horizontally */
+.flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* nav bar border? */
+}
+
+    /* width fulscreen */
+.full-width {
+    width: 100vw;
+}
+
+    /* title border and background color */
+#title-div {
     border: 4px rgb(93, 0, 0) solid;
     background-color: rgb(255, 130, 130);
 }
 
-
-h1 {
     /* border on the sides of title */
+    /* Heading text - size,color,background color */
+h1 {
     border-left: 4px rgb(93, 0, 0) solid;
     border-right: 4px rgb(93, 0, 0) solid;
-    /* Heading text - size,color,background color */
     font-family: "Oswald", sans-serif;
     color: rgb(46, 0, 0);
     font-size: calc(2rem + 2vh + 2vh);
     background-color: rgb(255, 130, 130);
+}
+
+
+/* cover image sizing */
+#libertines {
+    width: 70%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center top;
+    border: 4px rgb(93, 0, 0) solid;
 }
