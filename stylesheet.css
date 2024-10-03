@@ -61,15 +61,31 @@ h1 {
 }
 
 /* cover image sizing */
-#libertines {
+#cover-image {
     width: 70%;
     height: 400px;
     object-fit: cover;
     object-position: center top;
     border: 4px rgb(93, 0, 0) solid;
 }
+/* this changes size of the cover image as you zoom into the doc */
+@media (max-width:900px) {
+    #cover-image {
+        height: 200px;
+    }
+}
 
-
+@media (max-width:500px) {
+    #cover-image {
+        width: 100%;
+    }
+}
+/* this makes it so the cover image disapears */
+@media (max-width:400px) {
+    #cover-image {
+        display: none;
+    }
+}
 /* gallry styles */
 #gallery-div {
     display: grid;
@@ -77,7 +93,7 @@ h1 {
     "item1 item2 item3 item4"
 }
 
-@media (max-width:800px) {
+@media (max-width:1000px) {
     #gallery-div {
         grid-template-areas:
         "item1 item2"
@@ -85,7 +101,7 @@ h1 {
     }
 }
 
-@media (max-width:400px) {
+@media (max-width:450px) {
     #gallery-div {
         grid-template-areas:
         "item1"
