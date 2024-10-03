@@ -15,14 +15,30 @@
     align-items: center;
 }
 
+.flex-col {
+    flex-direction: column;
+}
+
+.card {
+
+}
+
 /* width fulscreen */
 .full-width {
     width: 100vw;
 }
 
+/* grid layout */
 .grid-layout {
     display: flex;
     flex-direction: column;
+}
+
+/* songs images sizes */
+.songs-images {
+    width: 70%;
+    height: 400px;
+    object-fit: contain;
 }
 
 /* title border and background color */
