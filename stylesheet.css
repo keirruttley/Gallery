@@ -15,17 +15,19 @@
     align-items: center;
 }
 
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
 
 /* width fulscreen */
 .full-width {
     width: 100vw;
 }
 
-/* grid layout */
-.grid-layout {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
+/* all images layouts and size*/
+.card {
+    width: 25vw;
     height: 300px;
     object-fit: cover;
 }
@@ -61,4 +63,29 @@ h1 {
     object-fit: cover;
     object-position: center top;
     border: 4px rgb(93, 0, 0) solid;
+}
+
+
+/* gallry styles */
+#gallery-div {
+    display: grid;
+    grid-template-areas:
+    "item1 item2 item3 item4"
+}
+
+/* gallery items */
+#item1 {
+    grid-area: item1;
+}
+
+#item2 {
+    grid-area: item2;
+}
+
+#item3 {
+    grid-area: item3;
+}
+
+#item4 {
+    grid-area: item4;
 }
