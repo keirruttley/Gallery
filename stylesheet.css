@@ -12,11 +12,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* nav bar border? */
     border: 4px rgb(93, 0, 0) solid;
     background-color: rgb(255, 130, 130);
 }
 
+
 h1 {
+    /* border on the sides of title */
+    border-left: 4px rgb(93, 0, 0) solid;
+    border-right: 4px rgb(93, 0, 0) solid;
+    /* Heading text - size,color,background color */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(46, 0, 0);
     font-size: calc(2rem + 2vh + 2vh);
