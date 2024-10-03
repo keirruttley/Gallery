@@ -15,19 +15,24 @@
     align-items: center;
 }
 
-    /* width fulscreen */
+/* width fulscreen */
 .full-width {
     width: 100vw;
 }
 
-    /* title border and background color */
+.grid-layout {
+    display: flex;
+    flex-direction: column;
+}
+
+/* title border and background color */
 #title-div {
     border: 4px rgb(93, 0, 0) solid;
     background-color: rgb(255, 130, 130);
 }
 
-    /* border on the sides of title */
-    /* Heading text - size,color,background color */
+/* border on the sides of title */
+/* Heading text - size,color,background color */
 h1 {
     border-left: 4px rgb(93, 0, 0) solid;
     border-right: 4px rgb(93, 0, 0) solid;
@@ -36,7 +41,6 @@ h1 {
     font-size: calc(2rem + 2vh + 2vh);
     background-color: rgb(255, 130, 130);
 }
-
 
 /* cover image sizing */
 #libertines {
