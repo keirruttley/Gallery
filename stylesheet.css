@@ -2,6 +2,7 @@
 * {
     padding: 0%;
     margin: 0;
+    background-color: rgb(191, 191, 191);
 }
 
 #title {
@@ -11,4 +12,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(67, 67, 67);
+    font-size: calc(2rem + 2vh + 2vh);
 }
