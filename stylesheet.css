@@ -1,5 +1,8 @@
 #title {
+    /* width fulscreen */
     width: 100vw;
+    /* centre content vertically and horizontally */
     display: flex;
     justify-content: center;
+    align-items: center;
 }
