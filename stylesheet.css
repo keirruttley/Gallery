@@ -8,13 +8,14 @@
     background-color: rgb(255, 90, 90);
 }
 
- /* centre content vertically and horizontally */
+/* centre content vertically and horizontally */
 .flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* displays contents in a column */
 .flex-column {
     display: flex;
     flex-direction: column;
@@ -25,6 +26,7 @@
     width: 100vw;
 }
 
+/* this makes all of the cards max width 300px */
 .card {
     max-width: 300px;
 }
@@ -68,6 +70,7 @@ h1 {
     object-position: center top;
     border: 4px rgb(93, 0, 0) solid;
 }
+
 /* this changes size of the cover image as you zoom into the doc */
 @media (max-width:900px) {
     #cover-image {
@@ -80,35 +83,37 @@ h1 {
         width: 100%;
     }
 }
+
 /* this makes it so the cover image disapears */
 @media (max-width:400px) {
     #cover-image {
         display: none;
     }
 }
-/* gallry styles */
-#gallery-div {
-    display: grid;
-    grid-template-areas:
-    "item1 item2 item3 item4"
-}
 
 @media (max-width:1000px) {
     #gallery-div {
         grid-template-areas:
-        "item1 item2"
-        "item3 item4"
+            "item1 item2"
+            "item3 item4"
     }
 }
 
 @media (max-width:450px) {
     #gallery-div {
         grid-template-areas:
-        "item1"
-        "item2"
-        "item3"
-        "item4"
+            "item1"
+            "item2"
+            "item3"
+            "item4"
     }
+}
+
+/* gallry styles */
+#gallery-div {
+    display: grid;
+    grid-template-areas:
+        "item1 item2 item3 item4"
 }
 
 /* gallery items */
