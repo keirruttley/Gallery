@@ -63,6 +63,7 @@ without showing the text at all times making it look cluttered */
     transition: opacity .2s, visibility .1s;
   }
   
+  
   .image-hover:hover .image-description {
     visibility: visible;
   }
