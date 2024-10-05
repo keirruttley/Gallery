@@ -46,27 +46,31 @@
     position: relative;
 }
 
+/* this allows text of the image so the viewer is able to read what song it is
+without showing the text at all times making it look cluttered */
   .image-description {
     position: absolute;
     width: 250px;
     height: 250px;
     background: rgba(154, 29, 29, 0.72);
-    color: #fff;
+    color: #ffffff;
     visibility: hidden;
-    opacity: 20;
+    align-items: center;
+    justify-content: center;
+    display: flex;
   
     /* transition effect. not necessary */
     transition: opacity .2s, visibility .1s;
   }
   
-  .image-wrap:hover .image-description {
+  .image-hover:hover .image-description {
     visibility: visible;
-    opacity: 1;
   }
 /* title border and background color */
 #title-div {
     border: 4px rgb(93, 0, 0) solid;
     background-color: rgb(255, 130, 130);
+    letter-spacing: 10px;
 }
 
 /* border on the sides of title */
@@ -89,64 +93,3 @@ h1 {
     border: 4px rgb(93, 0, 0) solid;
 }
 
-/* this changes size of the cover image as you zoom into the doc */
-@media (max-width:900px) {
-    #cover-image {
-        height: 200px;
-    }
-}
-
-@media (max-width:500px) {
-    #cover-image {
-        width: 100%;
-    }
-}
-
-/* this makes it so the cover image disapears */
-@media (max-width:400px) {
-    #cover-image {
-        display: none;
-    }
-}
-
-@media (max-width:1000px) {
-    #gallery-div {
-        grid-template-areas:
-            "item1 item2"
-            "item3 item4"
-    }
-}
-
-@media (max-width:450px) {
-    #gallery-div {
-        grid-template-areas:
-            "item1"
-            "item2"
-            "item3"
-            "item4"
-    }
-}
-
-/* gallry styles */
-#gallery-div {
-    display: grid;
-    grid-template-areas:
-        "item1 item2 item3 item4"
-}
-
-/* gallery items */
-#item1 {
-    grid-area: item1;
-}
-
-#item2 {
-    grid-area: item2;
-}
-
-#item3 {
-    grid-area: item3;
-}
-
-#item4 {
-    grid-area: item4;
-}
