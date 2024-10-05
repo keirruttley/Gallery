@@ -94,3 +94,11 @@ h1 {
     border: 4px rgb(93, 0, 0) solid;
 }
 
+#gallery-div {
+    display: grid;
+    grid-template-areas:
+    "item1 item2 item3 item4"
+
+}
+
+@media ()
