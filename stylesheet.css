@@ -43,8 +43,26 @@
     width: 250px;
     height: 250px;
     object-fit: contain;
+    position: relative;
 }
 
+  .image-description {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: rgba(154, 29, 29, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 20;
+  
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .1s;
+  }
+  
+  .image-wrap:hover .image-description {
+    visibility: visible;
+    opacity: 1;
+  }
 /* title border and background color */
 #title-div {
     border: 4px rgb(93, 0, 0) solid;
