@@ -32,7 +32,7 @@
     width: 250px;
     height: 250px;
     object-fit: cover;
-
+    background-size: cover;
 }
 
 /* songs images sizes */
@@ -189,72 +189,60 @@ h1 {
 #item1 {
     grid-area: item1;
     background-image: url("assets/songs images/Silentalarmcover.jpg");
-    background-size: cover;
 }
 
 #item2 {
     grid-area: item2;
     background-image: url("assets/songs images/Upthebracket.webp");
-    background-size: cover;
 }
 
 #item3 {
     grid-area: item3;
     background-image: url("assets/songs images/Pablohoney.jpg");
-    background-size: cover;
 }
 
 #item4 {
     grid-area: item4;
     background-image: url("assets/songs images/whatdidyouexpectfromthevaccines.jpg");
-    background-size: cover;
 }
 
 #item5 {
     grid-area: item5;
     background-image: url("assets/songs images/Mensneedswomensneedswhatever.jpg");
-    background-size: cover;
 }
 
 #item6 {
     grid-area: item6;
     background-image: url("assets/songs images/Definitelymaybe.jpg");
-    background-size: cover;
 }
 
 #item7 {
     grid-area: item7;
     background-image: url("assets/songs images/Youngchasers.jpg");
-    background-size: cover;
 }
 
 #item8 {
     grid-area: item8;
     background-image: url("assets/songs images/Parklife.jpg");
-    background-size: cover;
 }
 
 #item9 {
     grid-area: item9;
     background-image: url("assets/songs images/Blossoms.jpg");
-    background-size: cover;
 }
 
 #item10 {
     grid-area: item10;
     background-image: url("assets/songs images/Westryderpauperlunaticasylum.jpg");
-    background-size: cover;
 }
 
 #item11 {
     grid-area: item11;
     background-image: url("assets/songs images/Insideininsideout.jpg");
-    background-size: cover;
 }
 
 
 #item12 {
     grid-area: item12;
     background-image: url("assets/songs\ images/favouriteworstnightmare.jpg");
-    background-size: cover;
 }
