@@ -66,11 +66,31 @@ without showing the text at all times making it look cluttered */
 /* media queries for gallery images */
 @media (max-width: 1617px) {
     .card {
-        width: 100%;
-        height: none; 
+        width: 17vw;
+        height: 17vw; 
     }
 }
    
+@media (max-width: 900px) {
+    .card {
+        width: 35vw;
+        height: 35vw; 
+    }
+}
+
+@media (max-width: 500px) {
+    .card {
+        width: 50vw;
+        height: 50vw; 
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        width: 100vw;
+        height: 100vw; 
+    }
+}
 
 /* title border and background color */
 #title-div {
@@ -154,7 +174,7 @@ h1 {
 }
 
 /* below 800px - display in one column */
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     #gallery-div {
         grid-template-areas:
             "item1 item2"
@@ -163,6 +183,20 @@ h1 {
             "item7 item8"
             "item9 item10"
             "item11 item12";
+            /* width: 95%; */
+    }
+}
+
+@media (max-width: 500px) {
+    #gallery-div {
+        grid-template-areas:
+            "item1 item2"
+            "item3 item4"
+            "item5 item6"
+            "item7 item8"
+            "item9 item10"
+            "item11 item12";
+            width: 100%;
     }
 }
 
@@ -182,6 +216,7 @@ h1 {
             "item10"
             "item11"
             "item12";
+        justify-content: center;
     }
 }
 
